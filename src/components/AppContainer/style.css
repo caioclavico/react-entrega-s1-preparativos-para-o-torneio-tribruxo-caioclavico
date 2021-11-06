@@ -1,0 +1,52 @@
+.AppContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  height: 100vh;
+  background-image: url("https://i.ibb.co/khLS1qw/wp-hogwarts.webp");
+  background-size: contain;
+  font-family: HarryPotter;
+  color: black;
+}
+
+.AppContainer_studants {
+  display: flex;
+  gap: 10px;
+  overflow-y: hidden;
+}
+
+.AppContainer_studants_button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 150px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f9e141;
+}
+
+button:hover {
+  filter: brightness(0.9);
+}
+
+.AppContainer_home h1 {
+  font-size: 60px;
+}
+
+.AppContainer_home p {
+  font-size: 30px;
+}
+
+@media (min-width: 600px) {
+  .AppContainer_studants {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    overflow: hidden;
+  }
+}

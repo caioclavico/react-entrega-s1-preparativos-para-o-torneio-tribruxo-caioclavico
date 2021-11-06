@@ -1,0 +1,49 @@
+.Studant h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+  font-size: 30px;
+}
+.Studant img {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.Studant h3 {
+  font-size: 24px;
+}
+
+.Gryffindor {
+  border: 5px solid #a40201;
+  border-radius: 10px;
+}
+
+.Slytherin {
+  border: 5px solid #00a421;
+  border-radius: 10px;
+}
+
+.Hufflepuff {
+  border: 5px solid #f9e141;
+  border-radius: 10px;
+}
+
+.Ravenclaw {
+  border: 5px solid #0606f1;
+  border-radius: 10px;
+}
+
+.NoHouse {
+  border: 5px solid #808080;
+  border-radius: 10px;
+}
+
+@media (min-width: 600px) {
+  .Studant img {
+    width: 150px;
+    height: 300px;
+  }
+}

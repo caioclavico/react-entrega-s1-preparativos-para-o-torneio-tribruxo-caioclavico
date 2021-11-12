@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import AppContainer from "./components/AppContainer";
+import RandomStudents from "./components/RandomStudents";
+import Home from "./components/Home";
 
 function App() {
   const [studantsList, setStudantsList] = useState([]);
@@ -82,12 +83,16 @@ function App() {
 
   return (
     <div className="App">
-      <AppContainer
-        randomStudants={randomStudants}
-        random={random}
-        showImage={showImage}
-        setRandomStudants={setRandomStudants}
-      />
+      {randomStudants.length > 0 ? (
+        <RandomStudents
+          randomStudants={randomStudants}
+          showImage={showImage}
+          setRandomStudants={setRandomStudants}
+          random={random}
+        />
+      ) : (
+        <Home random={random} />
+      )}
     </div>
   );
 }

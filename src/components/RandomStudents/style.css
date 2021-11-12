@@ -1,0 +1,21 @@
+.Container_studants {
+  display: flex;
+  gap: 10px;
+  overflow-y: hidden;
+}
+
+.Container_studants_button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 30px;
+}
+
+@media (min-width: 460px) {
+  .Container_studants {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    overflow: hidden;
+  }
+}

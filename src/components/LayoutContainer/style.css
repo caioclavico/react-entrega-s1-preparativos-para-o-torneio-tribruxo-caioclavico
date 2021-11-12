@@ -1,0 +1,24 @@
+.Layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  height: 100vh;
+  background-image: url("https://i.ibb.co/khLS1qw/wp-hogwarts.webp");
+  background-size: contain;
+  font-family: HarryPotter;
+  color: black;
+}
+
+button {
+  width: 150px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f9e141;
+  margin: 10px;
+}
+
+button:hover {
+  filter: brightness(0.9);
+}
